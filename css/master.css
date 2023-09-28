@@ -1,0 +1,146 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+h1{
+    font-family: 'Poppins', sans-serif;;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Violet);
+}
+.all{
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    padding: 10px 20px;
+    margin: 25px 25px;
+    width: 150px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px){
+    .box{
+        flex-direction: column;
+    }
+}
+.box img{
+    width: 650px;
+    margin: 15px 50px;
+}
+@media (max-width: 767px){
+    .box img {
+        width: 320px;
+    }
+}
+@media (max-width: 767px){
+    .text{
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+.box h1{
+    font-size: 37px;
+    color: white;
+}
+.box p{
+    color: white;
+    font-size: 16px;
+    margin: 0 10px 15px 0;
+}
+button{
+    border-radius: 30px;
+    color: var(--Violet);
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;    
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.icons{
+    position: relative;
+    float: right;
+    margin-right: 44px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+@media (max-width: 767px){
+    .icons{
+        font-size: 18px;
+        bottom: -35px;
+        left: -70px;
+    }
+}
+.one::after,
+.two::after,
+.three::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    top: -8px;
+}
+@media (max-width: 767px){
+    .one::after,
+    .two::after,
+    .three::after{
+        width: 30px;
+        height: 30px;
+    }
+}
+.one::after{
+    left: -13px;
+}
+.two::after{
+    right: 53px;
+}
+.three::after{
+    right: -10px;
+}
+@media (max-width: 767px){
+    .one::after{
+        left: -10px;
+    }
+    .two::after{
+        right: 57px;
+    }
+    .three::after{
+        right: -8px;
+    }
+}
+.icons .one:hover{
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+.icons .one:hover::after{
+    border-color: var(--Soft-Magenta);
+}
+.icons .two:hover{
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+.icons .two:hover::after{
+    border-color: var(--Soft-Magenta);
+}
+.icons .three:hover{
+    color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+.icons .three:hover::after{
+    border-color: var(--Soft-Magenta);
+}
